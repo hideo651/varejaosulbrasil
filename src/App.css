@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kadwa:wght@400;700&family=Playwrite+DK+Loopet:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,9 +6,8 @@
 
 body {
   margin: 0;
-  --type-firts: . "Kadwa", Helvetica, Arial, sans-serif;
-  --type-second: "Spectral", Georgia;
-  font-family: var(--type-firts);
+  font-family: kadwa;
+  margin-bottom: 50px;
 }
 
 h1,

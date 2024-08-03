@@ -16,8 +16,8 @@ const Header = () => {
           <a href="*">Verduras</a>
         </div>
         <div className={styles.contatos}>
-          <span>(14) 999-9999-99</span>
-          <span href="">varejo@mail.com</span>
+          <p>(14) 999-9999-99</p>
+          <p href="">varejo@mail.com</p>
         </div>
       </nav>
     </header>
