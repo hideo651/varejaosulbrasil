@@ -1,6 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 import styles from "./Delivery.module.css";
 import Ifood from "../assets/ifood.svg";
+import endereco from "../assets/endereco.png";
 
 const Delivery = () => {
   return (
@@ -8,17 +9,24 @@ const Delivery = () => {
       <div className={`${styles.delivery} container`}>
         <div className={styles.texto}>
           <h2>Delivery</h2>
+          <div className={styles.ifood}>
+            <p>
+              Nossa loja oferece frutas e verduras frescas com entrega rápida
+              através do{" "}
+              <a target="_blank" href="https://www.ifood.com.br/inicio">
+                iFood
+              </a>
+              .
+            </p>
+            <div className={styles.imgIfood}>
+              <a target="_blank" href="https://www.ifood.com.br/inicio">
+                <img src={Ifood} alt="ifood" />
+              </a>
+            </div>
+          </div>
           <p>
-            Nossa loja oferece frutas e verduras frescas com entrega rápida
-            através do{" "}
-            <a target="_blank" href="https://www.ifood.com.br/inicio">
-              iFood
-            </a>
-            .
-          </p>
-          <p>
-            Tem um restaurante? Fale conosco pelo WhatsApp e obtenha preços
-            exclusivos!
+            Tem um restaurante?<br></br> Fale conosco pelo WhatsApp e obtenha
+            preços exclusivos!
           </p>
           <div className={styles.whatsapp}>
             <a
@@ -31,12 +39,10 @@ const Delivery = () => {
             <p>(14) 999-999-99</p>
           </div>
           <p>Endereço: Av. das Indústrias, 136</p>
+          <div className={styles.imgLoja}>
+            <img src={endereco} alt="localização da loja" />
+          </div>
           <p>Horario de funcionamento: Seg à Sex das 8 às 18</p>
-        </div>
-        <div>
-          <a target="_blank" href="https://www.ifood.com.br/inicio">
-            <img src={Ifood} alt="ifood" />
-          </a>
         </div>
       </div>
     </section>

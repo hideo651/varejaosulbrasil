@@ -33,6 +33,15 @@
   font-size: 1.5rem;
 }
 
+.ifood {
+  display: flex;
+  align-items: center;
+}
+
+.imgIfood {
+  width: 160px;
+}
+
 .whatsapp {
   display: flex;
   gap: 10px;
@@ -45,4 +54,9 @@
   width: 60px;
   border-radius: 12px;
   background: linear-gradient(180deg, #50c571 0%, #50cf9a 100%);
+}
+
+.imgLoja {
+  width: 400px;
+  border-radius: 8px;
 }
