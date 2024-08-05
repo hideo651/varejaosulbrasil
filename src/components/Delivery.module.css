@@ -1,0 +1,62 @@
+.section {
+  margin-top: 80px;
+}
+
+.delivery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  color: #0a490a;
+  align-items: center;
+  justify-items: center;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  grid-area: 10px;
+}
+
+.texto a {
+  color: red;
+}
+
+.texto p:nth-child(3) {
+  font-weight: bold;
+}
+
+.delivery h2 {
+  font-size: 3rem;
+}
+
+.delivery p {
+  font-size: 1.5rem;
+}
+
+.ifood {
+  display: flex;
+  align-items: center;
+}
+
+.imgIfood {
+  width: 160px;
+}
+
+.whatsapp {
+  display: flex;
+  gap: 10px;
+}
+
+.cardImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #50c571 0%, #50cf9a 100%);
+}
+
+.imgLoja {
+  width: 400px;
+  border-radius: 8px;
+}
