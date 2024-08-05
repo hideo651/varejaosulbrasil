@@ -18,7 +18,10 @@ const Footer = () => {
             </a>
           </p>
           <div className={styles.linkedin}>
-            <a href="https://www.linkedin.com/in/ayrton-hideo-hirata-29aa4367/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ayrton-hideo-hirata-29aa4367/"
+            >
               <FaLinkedin size={24} />
             </a>
           </div>

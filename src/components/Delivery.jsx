@@ -31,9 +31,12 @@ const Delivery = () => {
             <p>(14) 999-999-99</p>
           </div>
           <p>Endereço: Av. das Indústrias, 136</p>
+          <p>Horario de funcionamento: Seg à Sex das 8 às 18</p>
         </div>
         <div>
-          <img src={Ifood} alt="ifood" />
+          <a target="_blank" href="https://www.ifood.com.br/inicio">
+            <img src={Ifood} alt="ifood" />
+          </a>
         </div>
       </div>
     </section>

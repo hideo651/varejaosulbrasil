@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from "./Section.module.css";
 import frutas from "../assets/frutas.jpg";
 import vegetais from "../assets/vegetais.jpg";
@@ -81,6 +82,16 @@ const Produtos = () => {
           </div>
         </li>
       </ul>
+      <div className={styles.texto}>
+        <p>
+          <span>"</span> Estamos felizes em apresentar a você nossa loja, um
+          espaço dedicado à venda de frutas e verduras frescas, colhidas com
+          carinho por cooperados da região de Marília. Nossa missão é trazer
+          para sua mesa o que há de melhor na agricultura local, garantindo
+          produtos de alta qualidade, frescos e saborosos, diretamente dos
+          nossos produtores para você. <span>"</span>
+        </p>
+      </div>
     </section>
   );
 };

@@ -14,7 +14,7 @@
 
 .intro {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .article {
@@ -35,9 +35,7 @@
 }
 
 .foto {
-  position: absolute;
-  right: 30px;
-  max-width: 550px;
+  max-width: 450px;
 }
 
 .teste {
