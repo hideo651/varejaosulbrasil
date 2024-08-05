@@ -2,10 +2,6 @@
   margin-top: 80px;
 }
 
-a {
-  color: red;
-}
-
 .delivery {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -19,6 +15,10 @@ a {
   display: flex;
   flex-direction: column;
   grid-area: 10px;
+}
+
+.texto a {
+  color: red;
 }
 
 .texto p:nth-child(3) {
