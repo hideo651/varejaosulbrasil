@@ -8,12 +8,7 @@ const Header = () => {
           <div className={styles.logo}>
             <img src="../../src/assets/logo_sul_brasil.jpg" alt="logo" />
           </div>
-          <h3>VAREJÃO SUL BRASIL</h3>
-        </div>
-        <div className={styles.links}>
-          <a href="">Home</a>
-          <a href="*">Frutas</a>
-          <a href="*">Verduras</a>
+          <h3>HORTIFRUTI SUL BRASIL</h3>
         </div>
         <div className={styles.contatos}>
           <p>WhatsApp: (14) 999-9999-99</p>

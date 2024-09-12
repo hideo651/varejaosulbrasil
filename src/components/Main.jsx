@@ -1,18 +1,16 @@
 import styles from "./Main.module.css";
-import frutas from "../assets/cesta_frutas.svg";
+
+import frutas2 from "../assets/frutas2.svg";
+import frutas from "../assets/frutas.png";
 
 const Main = () => {
   return (
     <main className={styles.main}>
       <div className={`${styles.intro} container`}>
         <article className={styles.article}>
-          <span>Promoções diárias</span>
-          <h1>Frutas § Verduras</h1>
-          <p>
-            Bem-vindo ao Varejão Sul Brasil! Oferecemos frutas, verduras e
-            laticínios fresquinhos, vindos diretamente de cooperativas da região
-            de Marília-SP, garantindo qualidade e sabor para sua mesa.
-          </p>
+          <h1>
+            Hortifruti §<br></br> <span>Casa de Carnes</span>
+          </h1>
         </article>
         <div className={`${styles.foto} `}>
           <img src={frutas} alt="" />

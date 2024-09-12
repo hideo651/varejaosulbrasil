@@ -1,8 +1,41 @@
 .section {
   margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.delivery {
+.conteudo h3 {
+  color: #0a490a;
+}
+
+.icone {
+  width: 50px;
+}
+
+.titulo {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.infos {
+  margin-top: 10px;
+}
+.infos li {
+  margin-top: 10px;
+}
+
+.infos span {
+  font-weight: bold;
+}
+
+.infos p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* .delivery {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
@@ -59,4 +92,4 @@
 .imgLoja {
   width: 400px;
   border-radius: 8px;
-}
+} */

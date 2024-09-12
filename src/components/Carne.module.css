@@ -1,0 +1,61 @@
+.section {
+  margin-top: 30px;
+  background: tomato;
+}
+
+.section h2 {
+  font-size: 3rem;
+  color: #3e2723;
+}
+
+.img {
+  width: 450px;
+  height: 500px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.article {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.article p {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding-right: 90px;
+}
+
+.produtos h2 {
+  text-align: center;
+}
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.lista li {
+  width: 160px;
+  background: rgb(254, 239, 234);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.lista li img {
+  mix-blend-mode: multiply;
+}

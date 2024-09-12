@@ -1,16 +1,56 @@
 /* eslint-disable react/no-unescaped-entities */
-import styles from "./Section.module.css";
-import frutas from "../assets/frutas.jpg";
-import vegetais from "../assets/vegetais.jpg";
-import laticionios from "../assets/laticinios.jpg";
-import ovos from "../assets/ovos.png";
-import agua from "../assets/agua.jpg";
+import styles from "./Produtos.module.css";
+
+import Pesego from "../assets/mercadoria/image3.png";
+import Verdura from "../assets/mercadoria/image4.png";
+import Maca from "../assets/mercadoria/image6.png";
+import Laranja from "../assets/mercadoria/image7.png";
+import Batata from "../assets/mercadoria/image8.png";
+import Cenoura from "../assets/mercadoria/image9.png";
+import Brocolis from "../assets/mercadoria/image1.png";
+import Tomate from "../assets/mercadoria/image2.png";
 
 const Produtos = () => {
+  const produtos = [
+    { name: "Pesego", img: Pesego, cor: "#FEEFEA" },
+    { name: "Verdura", img: Verdura, cor: "#FFF3FF" },
+    { name: "Maça", img: Maca, cor: "#FEEFEA" },
+    { name: "Laranja", img: Laranja, cor: "#ECFFEC" },
+    { name: "Batata", img: Batata, cor: "#FFFCEB" },
+    { name: "Cenoura", img: Cenoura, cor: "#DEF9EC" },
+    { name: "Tomate", img: Tomate, cor: "#FEEFEA" },
+    {
+      name: "Brocolis",
+      img: Brocolis,
+      cor: "#DEF9EC",
+    },
+  ];
   return (
     <section className={`${styles.section} container`}>
       <h2>Nossos produtos</h2>
-      <ul>
+      <ul className={styles.produtos}>
+        {produtos.map((produto, index) => {
+          return (
+            <li key={index} style={{ background: produto.cor }}>
+              <img src={produto.img} alt="" />
+              <p>{produto.name}</p>
+            </li>
+          );
+        })}
+        {/* <li>
+          <div className={styles.fosco}>
+            <div className={styles.divImg}>
+              <img src={carnes} alt="agua" />
+            </div>
+            <div className={styles.overlay}>
+              <h3>Carnes</h3>
+              <p>
+                Melhores frutas da região de Marília, ótima qualidade da
+                coperativa.
+              </p>
+            </div>
+          </div>
+        </li>
         <li>
           <div className={styles.fosco}>
             <div className={styles.divImg}>
@@ -66,32 +106,8 @@ const Produtos = () => {
               </p>
             </div>
           </div>
-        </li>
-        <li>
-          <div className={styles.fosco}>
-            <div className={styles.divImg}>
-              <img src={agua} alt="agua" />
-            </div>
-            <div className={styles.overlay}>
-              <h3>Água</h3>
-              <p>
-                Melhores frutas da região de Marília, ótima qualidade da
-                coperativa.
-              </p>
-            </div>
-          </div>
-        </li>
+        </li> */}
       </ul>
-      <div className={styles.texto}>
-        <p>
-          <span>"</span> Estamos felizes em apresentar a você nossa loja, um
-          espaço dedicado à venda de frutas e verduras frescas, colhidas com
-          carinho por cooperados da região de Marília. Nossa missão é trazer
-          para sua mesa o que há de melhor na agricultura local, garantindo
-          produtos de alta qualidade, frescos e saborosos, diretamente dos
-          nossos produtores para você. <span>"</span>
-        </p>
-      </div>
     </section>
   );
 };

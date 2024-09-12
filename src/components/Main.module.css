@@ -1,31 +1,21 @@
 .main {
   background: #ffc107;
-  height: 515px;
-}
-
-.intro {
-  padding-top: 80px;
 }
 
 .intro h1 {
   color: #0a490a;
-  font-size: 5rem;
+  font-size: 4rem;
+  line-height: 90px;
 }
 
 .intro {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
 .article {
   position: relative;
-}
-.article span {
-  color: #0a490a;
-  font-size: 1.5rem;
-  background: #b4c8b1;
-  padding: 5px 15px 5px 15px;
-  border-radius: 12px;
 }
 
 .article p {
@@ -36,8 +26,12 @@
 
 .foto {
   max-width: 450px;
+
+  overflow: hidden; /* Se a imagem for maior, esconder partes que saem da div */
 }
 
-.teste {
-  width: 1400px;
+.foto img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
